@@ -12,7 +12,7 @@ library for disciplined convex programming (DCP).
 
 
 This repository contains a file 
-[interior_pt.py] 
+[`interior_pt.py`](interior_pt.py)
 that implements four important methods.
 The first two compute observational semantics of the PDG. 
 
