@@ -1,15 +1,26 @@
-See [OpenReview](https://openreview.net/forum?id=XIn-DFFR2zO) for the full paper
-and supplementary material. 
 
 # Inference in Probabilistic Dependency Graphs
 
-Connects the 
+This is the code repository corresponding to a 
+paper of the same name (See [OpenReview](https://openreview.net/forum?id=XIn-DFFR2zO) for the paper
+and supplementary material).
+The full paper contains proofs of correctness, runtime, a more legible 
+presentation of the optimization problems, and hardness results. 
+
+
+This code base implements some involved translations of PDGs
+to convex optimization problems. 
+Concretely, the upshot is that it connects
 [PDG Python library](https://github.com/orichardson/pdg)
 to the various convex solvers
 ([MOSEK](), [ECOS]()) via
 the `[cvxpy](https://www.cvxpy.org/)`
-library for disciplined convex programming (DCP).
+library for disciplined convex programming. 
+As such, it provides
+a python API for inference in probabilistic dependency graphs.
 
+
+## API and overview of library
 
 This repository contains a file 
 [`interior_pt.py`](interior_pt.py)
